@@ -1,0 +1,63 @@
+.profile-wrapper {
+    position: absolute;
+    right: 5px;
+    bottom: 0px;
+    z-index: 30;
+}
+
+.profile {
+    position: relative;
+    cursor: pointer;
+
+    .user-info {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        p {
+            color: goldenrod;
+        }
+
+        .profile-pic {
+            width: 45px;
+            height: 45px;
+            margin-bottom: 5px;
+            border-radius: 50%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                object-fit: contain;
+                border: 1px solid gold;
+            }
+        }
+    }
+
+    .profile-dropdown {
+        display: none;
+        position: absolute;
+        right: -5px;
+        padding: .5rem;
+        background-color: #272222;
+        width: 150px;
+
+        a,
+        p {
+            position: relative;
+            z-index: 100;
+            color: goldenrod;
+            text-align: center;
+
+            &:hover {
+                color: red;
+                scale: 1.05;
+            }
+        }
+    }
+
+    &:hover .profile-dropdown {
+        display: block;
+        text-align: center;
+    }
+}

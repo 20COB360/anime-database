@@ -1,0 +1,89 @@
+.sidebar-container {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    z-index: 25;
+    // width: 230px;
+
+    i {
+        color: bisque;
+        font-size: 25px;
+        cursor: pointer;
+
+        &:hover {
+            scale: 1.1;
+        }
+    }
+
+    .sidebar {
+        display: none;
+        width: 200px;
+        height: 100vh;
+        background-color: #272222;
+        position: absolute;
+        right: -10px;
+        // padding-left: 2vw;
+
+        .close-btn {
+            width: 100%;
+            text-align: right;
+
+            i {
+                color: red;
+                // float: right;
+                margin: 5px;
+
+                &:hover {
+                    scale: 1.2;
+                }
+            }
+        }
+
+        h3 {
+            color: goldenrod;
+            padding: 3px 1vw;
+            border-bottom: 1px solid white;
+        }
+
+        ul {
+            padding: 0vw 2vw;
+
+            li {
+                color: antiquewhite;
+            }
+        }
+    }
+
+    .active {
+        display: inline-block;
+        animation: slidein .5s ease-in-out;
+    }
+
+    .inactive {
+        animation: slideout .5s ease-in-out;
+    }
+
+    @keyframes slidein {
+        from {
+            right: -200px;
+            opacity: 0;
+        }
+
+        to {
+            right: -10px;
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideout {
+        from {
+            right: -10px;
+            opacity: 1;
+        }
+
+        to {
+            right: -200px;
+            opacity: 0;
+        }
+    }
+}

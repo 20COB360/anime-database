@@ -1,0 +1,37 @@
+.comment {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 2dvw;
+    align-items: center;
+
+    .user-and-comment {
+        width: 73%;
+
+        .comment-text {
+            
+        }
+    }
+
+    .anime-cover {
+        width: 25%;
+        height: fit-content;
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+p {
+    color: antiquewhite;
+
+    span {
+        font-weight: bold;
+        color: orange;
+    }
+
+    name-tag {
+        color: red;
+    }
+}

@@ -1,0 +1,45 @@
+.requested {
+    .item {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 20rem;
+        gap: 15px;
+
+        .anime-name {
+            width: 80%;
+
+            p {
+                color: antiquewhite;
+            }
+        }
+
+        .votes {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 20%;
+            border-radius: 5px;
+            background-color: blueviolet;
+
+            i {
+                color: antiquewhite;
+                background-color: transparent;
+                cursor: pointer;
+                transition: all .3s ease-in-out;
+                &:hover{
+                    scale: 1.1;
+                    color: yellow;
+                }
+            }
+
+            p {
+                background-color: gold;
+                color: blue;
+                padding: 2px;
+                font-weight: bold;
+            }
+        }
+    }
+}

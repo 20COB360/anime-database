@@ -1,0 +1,39 @@
+.wrapper {
+    .suggestion-form {
+        padding: 2rem;
+        margin: 2rem auto;
+        border: 4px solid white;
+        border-radius: 10px;
+        text-align: center;
+        vertical-align: middle;
+
+        input[type=text],
+        textarea {
+            border: none;
+            margin: 1rem;
+            outline: transparent;
+            display: inline;
+            width: 96%;
+            font-size: 1.8rem;
+            text-align: center;
+            font-weight: bold;
+            opacity: 0.3;
+            border-radius: 5px;
+        }
+
+        textarea {
+            vertical-align: middle;
+        }
+    }
+
+    .side-image {
+        width: 30%;
+        object-fit: contain;
+        text-align: center;
+
+        img {
+            width: 51%;
+            height: 53rem;
+        }
+    }
+}

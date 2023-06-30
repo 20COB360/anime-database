@@ -1,0 +1,49 @@
+.slider {
+    width: 100vw;
+    overflow: hidden;
+
+    .slide {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+
+        .content {
+            height: 550px;
+            object-fit: contain;
+            margin: 0 -40px;
+
+            img {
+                transition: all ease-in-out 1s;
+                height: 100%;
+                width: 100%;
+                transition: all 1s ease-in-out;
+            }
+
+
+            .first-image {
+                clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+            }
+
+            .next-image {
+                clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+            }
+
+            .last-image {
+                clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+            }
+
+            .leave {
+                animation: leaving 2s ease-in-out forwards;
+
+                @keyframes leaving {
+                    from {
+                        opacity: 1;
+                    }
+
+                    to {
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+    }
+}

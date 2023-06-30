@@ -1,0 +1,33 @@
+hr {
+    color: white;
+}
+
+.footer {
+    margin-top: 2vw;
+    background-color: #000000d4;
+    padding: 5rem;
+
+    .social-box {
+        margin: 15px 0px;
+
+        .media-connect-list {
+            list-style: none;
+
+            .media-head {
+                color: goldenrod;
+            }
+
+            .media-link i {
+                color: antiquewhite;
+            }
+
+            .media-head,
+            .media-link {
+                display: inline;
+                margin: 0px 5px;
+            }
+        }
+    }
+
+    background-image: linear-gradient(antiquewhite, black);
+}
